@@ -1,7 +1,7 @@
 services:
   mongodb:
     image: mongo:7
-    container_name: expense_tracker_mongo
+    container_name: mongoDB
     restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
