@@ -43,3 +43,6 @@ next-env.d.ts
 
 # intellij
 .idea
+
+# MCP config (contains local credentials)
+.mcp.json

@@ -22,6 +22,14 @@ No test runner is configured yet.
 - **Tailwind CSS 4** (via `@tailwindcss/postcss`)
 - **TypeScript 5** with strict mode
 
+## Documentation
+
+Before implementing any feature, Claude Code MUST read and follow the relevant documentation files in the `/docs` directory. These files are the authoritative source for design decisions, component usage, and conventions for this project.
+
+- `docs/ui.md` — UI specification: all screens, components, layout, accessibility, and theming rules. No feature that touches the UI may be implemented without first reading this file.
+
+If a `/docs` file exists that is relevant to the work being done, reading it is not optional — it takes precedence over general knowledge or defaults.
+
 ## Architecture
 
 This project uses the **App Router** (`app/` directory), not the Pages Router. All routes, layouts, and API handlers go under `app/`.
