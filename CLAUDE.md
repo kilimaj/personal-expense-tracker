@@ -22,11 +22,17 @@ No test runner is configured yet.
 - **Tailwind CSS 4** (via `@tailwindcss/postcss`)
 - **TypeScript 5** with strict mode
 
+## AI Development Workflow
+
+**Read `docs/ai-workflow.md` before starting any task.** All development follows a plan-first, code-second process. Claude Code must produce a written technical plan and wait for explicit human approval before writing any code. This applies to every task — features, bug fixes, and refactors.
+
 ## Documentation
 
 Before implementing any feature, Claude Code MUST read and follow the relevant documentation files in the `/docs` directory. These files are the authoritative source for design decisions, component usage, and conventions for this project.
 
+- `docs/ai-workflow.md` — Development workflow: plan format, approval rules, and implementation constraints. Read this first, before any other doc.
 - `docs/ui.md` — UI specification: all screens, components, layout, accessibility, and theming rules. No feature that touches the UI may be implemented without first reading this file.
+- `docs/auth.md` — Authentication specification: NextAuth configuration, session access patterns, route protection, data ownership rules, and the security checklist. No auth-related code or data-fetching code may be implemented without first reading this file.
 
 If a `/docs` file exists that is relevant to the work being done, reading it is not optional — it takes precedence over general knowledge or defaults.
 
