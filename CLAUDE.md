@@ -34,6 +34,7 @@ Before implementing any feature, Claude Code MUST read and follow the relevant d
 - `docs/ui.md` — UI specification: all screens, components, layout, accessibility, and theming rules. No feature that touches the UI may be implemented without first reading this file.
 - `docs/auth.md` — Authentication specification: NextAuth configuration, session access patterns, route protection, data ownership rules, and the security checklist. No auth-related code or data-fetching code may be implemented without first reading this file.
 - `docs/best-practices.md` — React and Next.js best practices: waterfall elimination, bundle optimization, re-render prevention, and JavaScript performance patterns. Apply these when writing any component, API route, or server action.
+- `docs/routing.md` — Routing specification: complete route map, protection model, layout hierarchy, API conventions, and naming rules. Read before adding, moving, or renaming any route, layout, or API handler.
 
 If a `/docs` file exists that is relevant to the work being done, reading it is not optional — it takes precedence over general knowledge or defaults.
 
