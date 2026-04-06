@@ -37,6 +37,7 @@ Before implementing any feature, Claude Code MUST read and follow the relevant d
 - `docs/routing.md` — Routing specification: complete route map, protection model, layout hierarchy, API conventions, and naming rules. Read before adding, moving, or renaming any route, layout, or API handler.
 - `docs/errors-and-validation.md` — Error handling and validation specification: Zod schema conventions, server and client validation patterns, HeroUI error components, error categorisation, logging rules, and wording guide. Read before writing any form, API route, Server Action, or error boundary.
 - `docs/security.md` — Security specification: environment variable management, secret handling, client-side exposure rules, Git safety, deployment practices, and security headers. Read before touching any credential, environment variable, API response, or deployment configuration.
+- `docs/data-mutations.md` — Data mutation specification: Server Action conventions, typed Zod inputs (no FormData), ActionResult shape, cache invalidation, redirect rules, and the mutation checklist. Read before writing any Server Action, form submission handler, or component that modifies data.
 
 If a `/docs` file exists that is relevant to the work being done, reading it is not optional — it takes precedence over general knowledge or defaults.
 

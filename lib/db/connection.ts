@@ -13,7 +13,6 @@ if (!MONGODB_URI) {
 // The Node.js process is not restarted on hot-reload, but modules are re-evaluated —
 // caching on global prevents opening new connections on every reload.
 declare global {
-  // eslint-disable-next-line no-var
   var __mongoose:
     | {
         conn: typeof mongoose | null
