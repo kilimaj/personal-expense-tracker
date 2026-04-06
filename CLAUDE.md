@@ -22,6 +22,25 @@ No test runner is configured yet.
 - **Tailwind CSS 4** (via `@tailwindcss/postcss`)
 - **TypeScript 5** with strict mode
 
+## AI Development Workflow
+
+**Read `docs/ai-workflow.md` before starting any task.** All development follows a plan-first, code-second process. Claude Code must produce a written technical plan and wait for explicit human approval before writing any code. This applies to every task — features, bug fixes, and refactors.
+
+## Documentation
+
+Before implementing any feature, Claude Code MUST read and follow the relevant documentation files in the `/docs` directory. These files are the authoritative source for design decisions, component usage, and conventions for this project.
+
+- `docs/ai-workflow.md` — Development workflow: plan format, approval rules, and implementation constraints. Read this first, before any other doc.
+- `docs/ui.md` — UI specification: all screens, components, layout, accessibility, and theming rules. No feature that touches the UI may be implemented without first reading this file.
+- `docs/auth.md` — Authentication specification: NextAuth configuration, session access patterns, route protection, data ownership rules, and the security checklist. No auth-related code or data-fetching code may be implemented without first reading this file.
+- `docs/best-practices.md` — React and Next.js best practices: waterfall elimination, bundle optimization, re-render prevention, and JavaScript performance patterns. Apply these when writing any component, API route, or server action.
+- `docs/routing.md` — Routing specification: complete route map, protection model, layout hierarchy, API conventions, and naming rules. Read before adding, moving, or renaming any route, layout, or API handler.
+- `docs/errors-and-validation.md` — Error handling and validation specification: Zod schema conventions, server and client validation patterns, HeroUI error components, error categorisation, logging rules, and wording guide. Read before writing any form, API route, Server Action, or error boundary.
+- `docs/security.md` — Security specification: environment variable management, secret handling, client-side exposure rules, Git safety, deployment practices, and security headers. Read before touching any credential, environment variable, API response, or deployment configuration.
+- `docs/data-mutations.md` — Data mutation specification: Server Action conventions, typed Zod inputs (no FormData), ActionResult shape, cache invalidation, redirect rules, and the mutation checklist. Read before writing any Server Action, form submission handler, or component that modifies data.
+
+If a `/docs` file exists that is relevant to the work being done, reading it is not optional — it takes precedence over general knowledge or defaults.
+
 ## Architecture
 
 This project uses the **App Router** (`app/` directory), not the Pages Router. All routes, layouts, and API handlers go under `app/`.
